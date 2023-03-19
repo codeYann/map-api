@@ -130,3 +130,6 @@ dmypy.json
 
 # pycache
 __pycache__
+
+# excel files
+*.xlsx
