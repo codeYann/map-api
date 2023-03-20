@@ -6,7 +6,7 @@ router = APIRouter()
 
 @router.get("/geolocation")
 async def read_data():
-    df_wrapper = read_geolocation_data(nrows=120)
+    df_wrapper = read_geolocation_data(nrows=250)
     df = select_columns(df_wrapper, ["LATITUDE", "LONGITUDE"])
     df["LATITUDE"] = df["LATITUDE"].astype(str)
     df["LONGITUDE"] = df["LONGITUDE"].astype(str)
